@@ -6,5 +6,10 @@
   "scripts": {
     "watch": "tailwindcss -i ./src/input.css -o ./public/output.css --watch",
     "build": "npx tailwindcss -i ./src/input.css -o ./public/output.css --minify"
+  },
+  "lavamoat": {
+    "allowScripts": {
+      "@tailwindcss/cli>@parcel/watcher#2.5.1": true
+    }
   }
 }
