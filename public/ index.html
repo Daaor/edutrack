@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>EduTrack</title>
+</head>
+<body class="min-h-dvh flex justify-center items-center bg-[#F9F9FD] px-4 py-23">
+    <div class="flex flex-col w-96 bg-[#ffffff] p-8 gap-1 rounded-xl drop-shadow-md backdrop-blur-sm">
+        <div class="flex justify-center mb-2">
+            <svg class="w-11 h-[52px]" viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 36L8 28.4V16.4L0 12L22 0L44 12V28H40V14.2L36 16.4V28.4L22 36ZM22 19.4L35.7 12L22 4.6L8.3 12L22 19.4ZM22 31.45L32 26.05V18.5L22 24L12 18.5V26.05L22 31.45Z" fill="#0E4471"/>
+            </svg>
+        </div>
+
+        <h1 class="text-[21px] text-center">EduTrack</h1>
+        <h2 class="text-[13px] text-center mb-5">Create your account</h2>
+
+        <button class="flex items-center justify-center gap-3 border border-[#E2E8F0] rounded-lg px-4 py-3">
+            <svg class="w-5 h-5 shrink-0" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.8 10.2083C18.8 9.55834 18.7417 8.93334 18.6333 8.33334H10V11.8833H14.9333C14.7167 13.025 14.0667 13.9917 13.0917 14.6417V16.95H16.0667C17.8 15.35 18.8 13 18.8 10.2083Z" fill="#4285F4"/>
+                <path d="M9.99998 19.1667C12.475 19.1667 14.55 18.35 16.0667 16.95L13.0917 14.6417C12.275 15.1917 11.2333 15.525 9.99998 15.525C7.61665 15.525 5.59165 13.9167 4.86665 11.75H1.81665V14.1167C3.32498 17.1083 6.41665 19.1667 9.99998 19.1667Z" fill="#34A853"/>
+                <path d="M4.86665 11.7417C4.68331 11.1917 4.57498 10.6083 4.57498 10C4.57498 9.39166 4.68331 8.80833 4.86665 8.25833V5.89166H1.81665C1.19165 7.125 0.833313 8.51666 0.833313 10C0.833313 11.4833 1.19165 12.875 1.81665 14.1083L4.86665 11.7417Z" fill="#FBBC05"/>
+                <path d="M9.99998 4.48334C11.35 4.48334 12.55 4.95001 13.5083 5.86668L16.1333 3.24168C14.5417 1.74168 12.475 0.833344 9.99998 0.833344C6.41665 0.833344 3.32498 2.89168 1.81665 5.89168L4.86665 8.25834C5.59165 6.09168 7.61665 4.48334 9.99998 4.48334Z" fill="#EA4335"/>
+            </svg>
+  
+            <span>Continue with Google</span>
+        </button>
+
+        <div class="flex items-center w-full my-5">
+            <div class="flex-grow border-t border-gray-300"></div>
+            <span class="text-sm px-4">OR SIGN IN WITH EMAIL</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+
+        <form class="flex flex-col gap-2">
+
+            <label for="name">Full Name</label>
+            <input class="px-4 py-3 border border-[#E2E8F0] rounded-xl" type="text" placeholder="Alex Rivers" id="name">
+    
+            <label for="email">Email</label>
+            <input class="px-4 py-3 border border-[#E2E8F0] rounded-xl" type="Email" placeholder="alex.rivers@university.edu" id="email">
+    
+            <label for="password">Password</label>
+            <input class="px-4 py-3 border border-[#E2E8F0] rounded-xl" type="Password" placeholder="" id="password">
+    
+            <button class="bg-[#0E4471] text-white flex items-center justify-center gap-2 rounded-xl px-4 py-3 my-3" type="submit">
+                <span>Sign Up</span>
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.13125 6.75H0V5.25H9.13125L4.93125 1.05L6 0L12 6L6 12L4.93125 10.95L9.13125 6.75Z" fill="white"/>
+                </svg>
+            </button>
+        </form>
+
+
+        <p class="text-center text-sm">Already have an account? <a href="./login.html" class="text-blue-800 hover:underline">Log in</a></p>
+
+    </div>
+</body>
+</html>
