@@ -6,7 +6,291 @@
     <link rel="stylesheet" href="output.css">
     <title>EduTrack</title>
 </head>
-<body>
-    <h1>Yo</h1>
+<body class="flex flex-col min-h-dvh bg-[#F9F9FD]">
+
+    <header class="flex flex-col justify-center border-b border-gray-100 md:px-10 shadow-sm"> <!--HEADER ELEMENTS-->
+
+        <div class="flex justify-between items-center px-4 py-2 md:px-8">
+
+            <div class="flex justify-center items-center gap-2 md:gap-3">
+                <svg class="w-11 h-11" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_5375_1118)">
+                        <rect x="3" y="2" width="36" height="36" rx="8" fill="#2E5C8A" shape-rendering="crispEdges"/>
+                        <path d="M20.9999 27.5L15.1666 24.3333V19.3333L11.8333 17.5L20.9999 12.5L30.1666 17.5V24.1667H28.4999V18.4167L26.8333 19.3333V24.3333L20.9999 27.5ZM20.9999 20.5833L26.7083 17.5L20.9999 14.4167L15.2916 17.5L20.9999 20.5833ZM20.9999 25.6042L25.1666 23.3542V20.2083L20.9999 22.5L16.8333 20.2083V23.3542L20.9999 25.6042Z" fill="#B2D4FF"/>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_5375_1118" x="0" y="0" width="42" height="42" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="1"/>
+                            <feGaussianBlur stdDeviation="1.5"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5375_1118"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5375_1118" result="shape"/>
+                        </filter>
+                    </defs>
+                </svg>
+
+                <span class="font-semibold text-4 py-2">EduTrack</span>
+            </div>
+    
+            <div class="hidden md:flex md:gap-1"> <!--I want this to be in navbar for mobile and then spread out for bigger screens-->
+                <a href="#" class="px-4 py-2 text-[14px] text-center">Features</a>
+                <a href="#" class="px-4 py-2 text-[14px] text-center">How it Works</a>
+                <a href="#" class="px-4 py-2 text-[14px] text-center">Shared Courses</a>
+                <a href="#" class="px-4 py-2 text-[14px] text-center">Testimonies</a>
+                <a href="#" class="px-4 py-2 text-[14px] text-center">Pricing/Free</a>
+            </div>
+    
+            <div class="flex gap-3">
+                <a href="./login.html" class="hidden md:inline-block py-2 px-4 text-center">Log In</a>
+                <a href="#" class="hidden md:inline-block bg-[#2E5C8A] text-white text-center py-2 px-4 rounded-lg">Get Started Free</a>
+                <a href="#" class="inline-block md:hidden py-3 px-[14px] bg-[#0E4471] text-white text-[14px] text-center font-semibold rounded-lg">Get started</a>
+                
+                <button>
+    
+                </button>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main class="flex flex-col pt-22 pb-6 px-4 md:pt-24 md:pb-8 md:px-18">
+
+        <section class="pt-8 pb-24 px-30"> <!--Section 1-->
+            <div class="flex flex-col justify-center items-center">
+                <div class="pb-4 md:pb-6 w-fit">
+                    <p class="flex justify-center items-center gap-2 px-3 py-1 md:py-[6px] md:px-[14px] bg-[#D1E4FF99] text-3 rounded-full text-[#0E4471]">
+                        <svg class="w-2 h-[14px]" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66667 13.3333L0 6.66667L6.66667 0L7.85 1.18333L2.36667 6.66667L7.85 12.15L6.66667 13.3333Z" fill="#0E4471"/>
+                        </svg>
+                        <span class="text-[11px] text-[#0E4471] md:text-3 font-semibold text-center">Built for university students <span>&bull;</span> Low-stress academic tracking</span>
+                    </p>
+                </div>
+    
+                <div class="pb-3 md:pb-6">
+                    <div class="px-8 md:p-0">         
+                        <h1 class="font-bold text-[24px] md:text-[44px] text-center">Never Miss a Deadline.</h1>
+                        <h1 class="font-bold text-[24px] md:text-[44px] text-center text-[#2E5C8A]">Say Goodbye to Academic Panic.</h1>
+                    </div>
+                </div>
+    
+                <p class="pb-8 px-3 text-[14px] md:text-[16px] text-center text-[#42474F]">The calm, collaborative deadline tracker designed for higher education. Sync shared courses with your classmates, break assignments into actionable sub tasks, and keep your semester organized with zero clutter.</p>
+    
+                <div class="flex pb-5 px-[19px] md:pb-6 flex-col md:flex-row justify-center items-center gap-3">
+                    <button class="flex items-center justify-center gap-2 bg-[#0E4471] py-3 px-6 rounded-lg shadow-md">
+                        <span class="text-white text-[16px] font-semibold text-center">Get Started Free</span>
+                        <svg class="w-3 h-3" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.13125 6.75H0V5.25H9.13125L4.93125 1.05L6 0L12 6L6 12L4.93125 10.95L9.13125 6.75Z" fill="white"/>
+                        </svg>
+                    </button>
+                    
+                    <button class="flex justify-center items-center py-3 px-5 gap-2 rounded-lg bg-[#FFFFFF] shadow-md">
+                        <svg class="w-4 h-4" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 12.0833L12.0833 8.33333L6.25 4.58333V12.0833ZM8.33333 16.6667C7.18056 16.6667 6.09722 16.4479 5.08333 16.0104C4.06944 15.5729 3.1875 14.9792 2.4375 14.2292C1.6875 13.4792 1.09375 12.5972 0.65625 11.5833C0.21875 10.5694 0 9.48611 0 8.33333C0 7.18056 0.21875 6.09722 0.65625 5.08333C1.09375 4.06944 1.6875 3.1875 2.4375 2.4375C3.1875 1.6875 4.06944 1.09375 5.08333 0.65625C6.09722 0.21875 7.18056 0 8.33333 0C9.48611 0 10.5694 0.21875 11.5833 0.65625C12.5972 1.09375 13.4792 1.6875 14.2292 2.4375C14.9792 3.1875 15.5729 4.06944 16.0104 5.08333C16.4479 6.09722 16.6667 7.18056 16.6667 8.33333C16.6667 9.48611 16.4479 10.5694 16.0104 11.5833C15.5729 12.5972 14.9792 13.4792 14.2292 14.2292C13.4792 14.9792 12.5972 15.5729 11.5833 16.0104C10.5694 16.4479 9.48611 16.6667 8.33333 16.6667Z" fill="#0E4471"/>
+                        </svg>
+                        <span class="text-[#0E4471] text-[16px] font-semibold text-center">Watch 2-Min Demo</span>
+                    </button>
+                </div>
+    
+                <p class="flex gap-1 md:gap-2 justify-center items-center text-[12px] pb-8 md:pb-12">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.06667 14L3.8 11.8667L1.4 11.3333L1.63333 8.86667L0 7L1.63333 5.13333L1.4 2.66667L3.8 2.13333L5.06667 0L7.33333 0.966667L9.6 0L10.8667 2.13333L13.2667 2.66667L13.0333 5.13333L14.6667 7L13.0333 8.86667L13.2667 11.3333L10.8667 11.8667L9.6 14L7.33333 13.0333L5.06667 14ZM5.63333 12.3L7.33333 11.5667L9.06667 12.3L10 10.7L11.8333 10.2667L11.6667 8.4L12.9 7L11.6667 5.56667L11.8333 3.7L10 3.3L9.03333 1.7L7.33333 2.43333L5.6 1.7L4.66667 3.3L2.83333 3.7L3 5.56667L1.76667 7L3 8.4L2.83333 10.3L4.66667 10.7L5.63333 12.3ZM6.63333 9.36667L10.4 5.6L9.46667 4.63333L6.63333 7.46667L5.2 6.06667L4.26667 7L6.63333 9.36667Z" fill="#10B981"/>
+                    </svg>
+
+                    <span class="text-[#42474F] text-[12px] text-center">                        
+                        100% Free for students <span>&middot;</span> No credit card needed <span>&middot;</span> Cancel anytime</p>
+                    </span>
+
+                    <img src="assets/master_app_preview_shell.png" alt="Master App Preview" class="w-full h-auto object-cover drop-shadow-md">
+            </div>
+        </section>
+
+        <section class="flex flex-col py-4 md:py-8"> <!--Section 2-->
+            <div class="flex flex-col py-6 md:py-10 md:px-30 bg-[#F3F3F880]">
+                <div class="flex flex-col px-4 rounded-sm gap-4 md:gap-6">
+                    <span class="text-[12px] text-[#42474F] text-center">TRUSTED BY STUDENTS AND COURSE REPS ACROSS TOP UNIVERSITIES</span>
+                    <div class="grid grid-cols-3 grid-rows-2 gap-[10px] md:flex md:gap-6 md:justify-center md:items-center">
+                        <span class="text-[16px] bg-[#FFFFFF] p-2 col-start-1 row-start-1 text-[12px] text-center rounded-md md:text-[16px] md:bg-[#F3F3F880] md:text-[#42474F]">STANFORD</span>
+                        <span class="text-[16px] bg-[#FFFFFF] p-2 col-start-2 row-start-1 text-[12px] text-center rounded-md md:text-[16px] md:bg-[#F3F3F880] md:text-[#42474F]">UC BERKELEY</span>
+                        <span class="text-[16px] bg-[#FFFFFF] p-2 col-start-3 row-start-1 text-[12px] text-center rounded-md md:text-[16px] md:bg-[#F3F3F880] md:text-[#42474F]">OXFORD</span>
+                        <span class="text-[16px] bg-[#FFFFFF] p-2 col-start-1 row-start-2 text-[12px] text-center rounded-md md:text-[16px] md:bg-[#F3F3F880] md:text-[#42474F]">TORONTO</span>
+                        <span class="text-[16px] bg-[#FFFFFF] p-2 col-start-2 row-start-2 text-[12px] text-center rounded-md md:text-[16px] md:bg-[#F3F3F880] md:text-[#42474F]">MICHIGAN</span>
+                        <span class="text-[16px] bg-[#FFFFFF] p-2 col-start-3 row-start-2 text-[12px] text-center rounded-md md:text-[16px] md:bg-[#F3F3F880] md:text-[#42474F]">MIT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section> <!--Section 3-->
+
+            <div class="flex flex-col py-20 gap-6 md:gap-12">
+                <div class="flex flex-col pt-2 gap-2 justify-center items-center md:hidden"> <!--This shows up instead of the one below on mobile screen sizes-->
+                    <h1 class="text-[11px] text-[#0E4471] font-semibold">FOCUS & COLLABORATION</h1>
+                    <h1 class="text-[20px] text-[#1A1C1F] font-semibold">Designed for sanity</h1>
+                </div>
+                <div class="hidden md:flex md:flex-col md:gap-3"> <!--This doesnt show up on mobile version at all...for some reason-->
+                    <h1 class="text-[30px] text-[#1A1C1F] text-center font-bold">Designed for Focus. Engineered for Collaboration</h1>
+                    <p class="text-[14px] text-[#42474F] text-center">Generic task planners are overwhelming. Edutrack strips away the corporate bloat to give you pure academic clarity.</p>
+                </div>
+
+                <div class="flex flex-col gap-4 items-center md:flex-row md:gap-6 md:justify-center"> <!--Card Section-->
+
+                    <div class="flex flex-col p-6 bg-[#FFFFFF] rounded-lg shadow-lg max-w-[358px]"> <!--Card 1-->
+                        <div class="flex flex-col gap-2 pb-6"> <!--Main card content-->
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#D1E4FF" fill-opacity="0.5"/>
+                                <path d="M24 34C22.7833 33.85 21.575 33.5208 20.375 33.0125C19.175 32.5042 18.1042 31.775 17.1625 30.825C16.2208 29.875 15.4583 28.675 14.875 27.225C14.2917 25.775 14 24.0333 14 22V21H15C15.85 21 16.725 21.1083 17.625 21.325C18.525 21.5417 19.3667 21.8667 20.15 22.3C20.35 20.8667 20.8042 19.3958 21.5125 17.8875C22.2208 16.3792 23.05 15.0833 24 14C24.95 15.0833 25.7792 16.3792 26.4875 17.8875C27.1958 19.3958 27.65 20.8667 27.85 22.3C28.6333 21.8667 29.475 21.5417 30.375 21.325C31.275 21.1083 32.15 21 33 21H34V22C34 24.0333 33.7083 25.775 33.125 27.225C32.5417 28.675 31.7792 29.875 30.8375 30.825C29.8958 31.775 28.8292 32.5042 27.6375 33.0125C26.4458 33.5208 25.2333 33.85 24 34ZM23.95 31.95C23.7667 29.1833 22.9458 27.0917 21.4875 25.675C20.0292 24.2583 18.2167 23.3833 16.05 23.05C16.2333 25.9 17.0792 28.025 18.5875 29.425C20.0958 30.825 21.8833 31.6667 23.95 31.95ZM24 25.6C24.25 25.2333 24.5542 24.8542 24.9125 24.4625C25.2708 24.0708 25.6167 23.7333 25.95 23.45C25.9167 22.5 25.7292 21.5083 25.3875 20.475C25.0458 19.4417 24.5833 18.4333 24 17.45C23.4167 18.4333 22.9542 19.4417 22.6125 20.475C22.2708 21.5083 22.0833 22.5 22.05 23.45C22.3833 23.7333 22.7333 24.0708 23.1 24.4625C23.4667 24.8542 23.7667 25.2333 24 25.6ZM25.95 31.5C26.5667 31.3 27.2083 31.0083 27.875 30.625C28.5417 30.2417 29.1625 29.7208 29.7375 29.0625C30.3125 28.4042 30.8042 27.5833 31.2125 26.6C31.6208 25.6167 31.8667 24.4333 31.95 23.05C30.3833 23.2833 29.0083 23.8042 27.825 24.6125C26.6417 25.4208 25.7333 26.45 25.1 27.7C25.3 28.2333 25.4708 28.8167 25.6125 29.45C25.7542 30.0833 25.8667 30.7667 25.95 31.5Z" fill="#0E4471"/>
+                            </svg>
+    
+                            <h2 class="pb-2 text-[16px] text-[#1A1C1F] font-semibold">Calm by Design</h2>
+                            <p class="hiddden pb-3 text-[14px] text-[#42474F] max-w-xs md:inline-block">Low-contrast, high-clarity interface inspired by Notion and Linear, intentionally built to reduce academic stress, deadline paralysis, and visual fatigue during crunch weeks.</p>
+                            <p class="inline-block pb-3 text-[14px] text-[#42474F] max-w-xs md:hidden">Low-contrast, clutter-free view inspired by Notion and Linear to prevent late-semester overload.</p>
+                        </div>
+
+                        <div class="flex flex-col p-3 md:pt-4 md:pb-3 md:px-3 bg-[#F3F3F866] rounded-lg"> <!--Footer card part-->
+                            <p class="flex gap-2 items-center">
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.0667 7L9.1 6.03333C9.2 5.51111 9.05 5.02222 8.65 4.56667C8.25 4.11111 7.73333 3.93333 7.1 4.03333L6.13333 3.06667C6.32222 2.97778 6.51389 2.91111 6.70833 2.86667C6.90278 2.82222 7.11111 2.8 7.33333 2.8C8.16667 2.8 8.875 3.09167 9.45833 3.675C10.0417 4.25833 10.3333 4.96667 10.3333 5.8C10.3333 6.02222 10.3111 6.23056 10.2667 6.425C10.2222 6.61944 10.1556 6.81111 10.0667 7ZM12.2 9.1L11.2333 8.16667C11.6556 7.84444 12.0306 7.49167 12.3583 7.10833C12.6861 6.725 12.9667 6.28889 13.2 5.8C12.6444 4.67778 11.8472 3.78611 10.8083 3.125C9.76944 2.46389 8.61111 2.13333 7.33333 2.13333C7.01111 2.13333 6.69444 2.15556 6.38333 2.2C6.07222 2.24444 5.76667 2.31111 5.46667 2.4L4.43333 1.36667C4.88889 1.17778 5.35556 1.03611 5.83333 0.941667C6.31111 0.847222 6.81111 0.8 7.33333 0.8C9.01111 0.8 10.5056 1.26389 11.8167 2.19167C13.1278 3.11944 14.0778 4.32222 14.6667 5.8C14.4111 6.45556 14.075 7.06389 13.6583 7.625C13.2417 8.18611 12.7556 8.67778 12.2 9.1ZM12.5333 13.2L9.73333 10.4333C9.34444 10.5556 8.95278 10.6472 8.55833 10.7083C8.16389 10.7694 7.75556 10.8 7.33333 10.8C5.65556 10.8 4.16111 10.3361 2.85 9.40833C1.53889 8.48056 0.588889 7.27778 0 5.8C0.233333 5.21111 0.527778 4.66389 0.883333 4.15833C1.23889 3.65278 1.64444 3.2 2.1 2.8L0.266667 0.933333L1.2 0L13.4667 12.2667L12.5333 13.2ZM3.03333 3.73333C2.71111 4.02222 2.41667 4.33889 2.15 4.68333C1.88333 5.02778 1.65556 5.4 1.46667 5.8C2.02222 6.92222 2.81944 7.81389 3.85833 8.475C4.89722 9.13611 6.05556 9.46667 7.33333 9.46667C7.55556 9.46667 7.77222 9.45278 7.98333 9.425C8.19444 9.39722 8.41111 9.36667 8.63333 9.33333L8.03333 8.7C7.91111 8.73333 7.79444 8.75833 7.68333 8.775C7.57222 8.79167 7.45556 8.8 7.33333 8.8C6.5 8.8 5.79167 8.50833 5.20833 7.925C4.625 7.34167 4.33333 6.63333 4.33333 5.8C4.33333 5.67778 4.34167 5.56111 4.35833 5.45C4.375 5.33889 4.4 5.22222 4.43333 5.1L3.03333 3.73333Z" fill="#0E4471"/>
+                                </svg>
+
+                                <span class="hidden text-[11px] text-[#42474F] md:inline-block">Zero loud banner ads or noisy push nudges</span>
+                                <span class="inline-block text-[11px] text-[#42474F] md:hidden">Zero loud banner ads or noisy alerts</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col p-6 bg-[#FFFFFF] rounded-lg shadow-lg max-w-[358px]"> <!--Card 2-->
+                        <div class="flex flex-col gap-2 pb-6"> <!--Main card content-->
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#0E4471" fill-opacity="0.1"/>
+                                <path d="M12 30V28.425C12 27.7083 12.3667 27.125 13.1 26.675C13.8333 26.225 14.8 26 16 26C16.2167 26 16.425 26.0042 16.625 26.0125C16.825 26.0208 17.0167 26.0417 17.2 26.075C16.9667 26.425 16.7917 26.7917 16.675 27.175C16.5583 27.5583 16.5 27.9583 16.5 28.375V30H12ZM18 30V28.375C18 27.8417 18.1458 27.3542 18.4375 26.9125C18.7292 26.4708 19.1417 26.0833 19.675 25.75C20.2083 25.4167 20.8458 25.1667 21.5875 25C22.3292 24.8333 23.1333 24.75 24 24.75C24.8833 24.75 25.6958 24.8333 26.4375 25C27.1792 25.1667 27.8167 25.4167 28.35 25.75C28.8833 26.0833 29.2917 26.4708 29.575 26.9125C29.8583 27.3542 30 27.8417 30 28.375V30H18ZM31.5 30V28.375C31.5 27.9417 31.4458 27.5333 31.3375 27.15C31.2292 26.7667 31.0667 26.4083 30.85 26.075C31.0333 26.0417 31.2208 26.0208 31.4125 26.0125C31.6042 26.0042 31.8 26 32 26C33.2 26 34.1667 26.2208 34.9 26.6625C35.6333 27.1042 36 27.6917 36 28.425V30H31.5ZM20.125 28H27.9C27.7333 27.6667 27.2708 27.375 26.5125 27.125C25.7542 26.875 24.9167 26.75 24 26.75C23.0833 26.75 22.2458 26.875 21.4875 27.125C20.7292 27.375 20.275 27.6667 20.125 28ZM16 25C15.45 25 14.9792 24.8042 14.5875 24.4125C14.1958 24.0208 14 23.55 14 23C14 22.4333 14.1958 21.9583 14.5875 21.575C14.9792 21.1917 15.45 21 16 21C16.5667 21 17.0417 21.1917 17.425 21.575C17.8083 21.9583 18 22.4333 18 23C18 23.55 17.8083 24.0208 17.425 24.4125C17.0417 24.8042 16.5667 25 16 25ZM32 25C31.45 25 30.9792 24.8042 30.5875 24.4125C30.1958 24.0208 30 23.55 30 23C30 22.4333 30.1958 21.9583 30.5875 21.575C30.9792 21.1917 31.45 21 32 21C32.5667 21 33.0417 21.1917 33.425 21.575C33.8083 21.9583 34 22.4333 34 23C34 23.55 33.8083 24.0208 33.425 24.4125C33.0417 24.8042 32.5667 25 32 25ZM24 24C23.1667 24 22.4583 23.7083 21.875 23.125C21.2917 22.5417 21 21.8333 21 21C21 20.15 21.2917 19.4375 21.875 18.8625C22.4583 18.2875 23.1667 18 24 18C24.85 18 25.5625 18.2875 26.1375 18.8625C26.7125 19.4375 27 20.15 27 21C27 21.8333 26.7125 22.5417 26.1375 23.125C25.5625 23.7083 24.85 24 24 24ZM24 22C24.2833 22 24.5208 21.9042 24.7125 21.7125C24.9042 21.5208 25 21.2833 25 21C25 20.7167 24.9042 20.4792 24.7125 20.2875C24.5208 20.0958 24.2833 20 24 20C23.7167 20 23.4792 20.0958 23.2875 20.2875C23.0958 20.4792 23 20.7167 23 21C23 21.2833 23.0958 21.5208 23.2875 21.7125C23.4792 21.9042 23.7167 22 24 22Z" fill="#0E4471"/>
+                            </svg>
+
+                            <h2 class="pb-2 text-[16px] text-[#1A1C1F] font-semibold">One-Click Shared Courses</h2>
+                            <p class="hidden pb-3 text-[14px] text-[#42474F] max-w-xs md:inline-block">Class reps generate a single 6-digit join code or share a link. Every student in the lecture hall syncs the exact same syllabus deadlines and reschedule updates instantly.</p>
+                            <p class="inline-block pb-3 text-[14px] text-[#42474F] max-w-xs md:hidden">Class reps share a 6-digit code. Every classmate automatically inherit syllabus deadlines.</p>
+                        </div>
+                        <div class="flex flex-col pt-4 pb-3 px-3 bg-[#F3F3F866] rounded-sm"> <!--Footer card part-->
+                            <p class="flex gap-2 items-center justify-center">
+                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 10.6667V9.33333H1.83333L1.56667 9.1C0.988889 8.58889 0.583333 8.00556 0.35 7.35C0.116667 6.69444 0 6.03333 0 5.36667C0 4.13333 0.369444 3.03611 1.10833 2.075C1.84722 1.11389 2.81111 0.477778 4 0.166667V1.56667C3.2 1.85556 2.55556 2.34722 2.06667 3.04167C1.57778 3.73611 1.33333 4.51111 1.33333 5.36667C1.33333 5.86667 1.42778 6.35278 1.61667 6.825C1.80556 7.29722 2.1 7.73333 2.5 8.13333L2.66667 8.3V6.66667H4V10.6667H0ZM6.66667 10.5V9.1C7.46667 8.81111 8.11111 8.31944 8.6 7.625C9.08889 6.93056 9.33333 6.15556 9.33333 5.3C9.33333 4.8 9.23889 4.31389 9.05 3.84167C8.86111 3.36944 8.56667 2.93333 8.16667 2.53333L8 2.36667V4H6.66667V0H10.6667V1.33333H8.83333L9.1 1.56667C9.64444 2.11111 10.0417 2.70278 10.2917 3.34167C10.5417 3.98056 10.6667 4.63333 10.6667 5.3C10.6667 6.53333 10.2972 7.63056 9.55833 8.59167C8.81944 9.55278 7.85556 10.1889 6.66667 10.5Z" fill="#0E4471"/>
+                                </svg>
+
+                                <span class="hidden text-[11px] text-[#42474F] md:inline-block">Changes made by reps auto-update everyone's view</span>
+                                <span class="inline-block text-[11px] text-[#42474F] md:hidden">Auto-sync when professors shift dates</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col p-6 bg-[#FFFFFF] rounded-lg shadow-sm max-w-[358px]"> <!--Card 3-->
+                        <div class="flex flex-col gap-2 pb-6"> <!--Main card content-->
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="8" fill="#10B981" fill-opacity="0.1"/>
+                                <path d="M17.55 31.5375L14 27.9875L15.4 26.5875L17.525 28.7125L21.775 24.4625L23.175 25.8875L17.55 31.5375ZM17.55 23.5375L14 19.9875L15.4 18.5875L17.525 20.7125L21.775 16.4625L23.175 17.8875L17.55 23.5375ZM25 29.5375V27.5375H34V29.5375H25ZM25 21.5375V19.5375H34V21.5375H25Z" fill="#10B981"/>
+                            </svg>
+
+                            <h2 class="pb-2 text-[16px] text-[#1A1C1F] font-semibold">Rewarding Progress Checklists</h2>
+                            <p class="hidden pb-3 text-[14px] text-[#42474F] max-w-xs md:inline-block">Deconstruct 15-page term papers and complex lab write-ups into bite-sized steps. Watch clean, responsive progress meters fill up with satisfying micro-feedback as you get things done.</p>
+                            <p class="inline-block pb-3 text-[14px] text-[#42474F] max-w-xs md:hidden">Deconstruct big 30% papers into manageable micro-steps with instant virtual milestone rewards.</p>
+                        </div>
+                        <div class="flex flex-col pt-4 pb-3 px-3 bg-[#F3F3F866] rounded-sm"> <!--Footer card part-->
+                            <p class="flex gap-2 items-center justify-center">
+                                <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.76667 8.01667L0 4.25L0.95 3.31667L3.78333 6.15L4.71667 7.08333L3.76667 8.01667ZM7.53333 8.01667L3.76667 4.25L4.7 3.3L7.53333 6.13333L13.6667 0L14.6 0.95L7.53333 8.01667ZM7.53333 4.25L6.58333 3.31667L9.88333 0.0166667L10.8333 0.95L7.53333 4.25Z" fill="#10B981"/>
+                                </svg>
+
+                                <span class="hidden text-[11px] text-[#42474F] md:inline-block">Bite-sized micro-tasks reduce heavy procrastination</span>
+                                <span class="inline-block text-[11px] text-[#42474F] md:hidden">Eliminates freeze & procrastination</span>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section> <!--Section 4-->
+            <div class="flex flex-col gap-12 justify-center items-center"> <!--Feature Tour-->
+
+                <div class="flex flex-col items-center gap-2 pt-2 md:pt-1 md:gap-3">
+                    <p class="hidden text-3 text-[#0E4471] font-semibold text-center md:block">COMPLETE FEATURE TOUR</p>
+                    <h1 class="hidden text-[30px] text-[#1A1C1F] font-bold md:block">Every feature tuned for student sanity</h1>
+
+                    <p class="block text-[11px] text-[#0E4471] font-semibold md:hidden">FEATURES IN DETAIL</p>
+                    <h1 class="block text-[20px] text-[#1A1C1F] font-semibold md:hidden">Every tool student-tested</h1>
+                </div>
+
+                <div class="flex flex-col gap-6 md:hidden">  <!--FOR MOBILE VIEW-->
+                    <img src="./assets/glanceable_agenda.png" alt="Display of Glanceable Agenda Feature">
+                    <img src="./assets/unified_Calendar.png" alt="Display of Unified Calendar Feature">
+                    <img src="./assets/gentle_sync.png" alt="Display of Gentle Sync Feature">
+
+                </div>
+    
+                <div class="hidden md:flex flex-col gap-12 mx-auto"> <!--FOR DESKTOP VIEW-->
+                    <img src="./assets/glanceable_agenda_and_urgency_tiers.png" alt="Display of Features in the webapp">
+                    <img src="./assets/unified_calendar.png" alt="">
+                    <img src="./assets/course_level_sync_and_gentle_reminders.png" alt="">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="py-4 bg-[#F3F3F8]">  <!--SECTION 5-->
+
+            <div class="flex flex-col py-8 px-4 gap-6"> <!--THE CARDS-->
+                <div class="flex flex-col gap-2 items-center">                
+                    <h1 class="inline-block text-[11px] text-[#0e4471] font-semibold md:hidden">HOW IT WORKS</h1>
+                    <h1 class="inline-block text-[20px] text-[#1a1c1f] font-semibold  md:hidden">3 steps to calmer semesters</h1>
+
+                    <h1 class="hidden text-[12px] text-[#0E4471] font-semibold md:inline-block">FAST ONBOARDING</h1>
+                    <h1 class="hidden pt-3 text-[30px] text-[#1a1c1f] font-bold  md:inline-block">Up and running in 3 simple steps</h1>
+                    <h1 class="hidden text-[14px] text-[#42474f] md:inline-block">No tedious data entry. Connect once and stay synchronized with your whole cohort</h1>
+                </div>
+                
+                <div class="flex flex-col gap-4 md:flex-row">
+
+                    <div class="bg-white flex p-4 gap-4 rounded-lg shadow-sm md:flex-col">
+                        <div class="flex w-[32px] h-[32px] rounded-full bg-[#0E4471] justify-center items-center"><span class="text-[16px] font-bold text-center text-white">01</span></div>
+                        <div>
+                            <p class="text-[16px] text-[#1a1c1f] font-semibold">Join Your Class</p>
+                            <p class="inline-block text-[12px] text-[#42474f] md:hidden">Enter your 6-digit course code or syllabus PDF to match cohort schedules.</p>
+                            <p class="hidden text-[12px] text-[#42474f] md:inline block">Enter your 6-digit course code or upload your syllabus PDF. EduTrack matches you to existing course schedules created by peers or verified class reps.</p>
+                        </div>
+                        <img src="./assets/cohort_match_img.png" alt="Instant Cohort Match" class="hidden md:inline-block">
+                    </div>
+                    
+                    <div class="bg-white flex p-4 gap-4 rounded-lg shadow-sm md:flex-col">
+                        <div class="flex w-[32px] h-[32px] rounded-full bg-[#0E4471] justify-center items-center"><span class="text-[16px] font-bold text-center text-white">02</span></div>
+                        <div>
+                            <p class="text-[16px] text-[#1a1c1f] font-semibold">Subdivide Tasks</p>
+                            <p class="inline-block text-[12px] text-[#42474f] md:hidden">Turn daunting papers into 4 mini-checkpoints with personalized data dates.</p>
+                            <p class="hidden text-[12px] text-[#42474f] md:inline block">Turn daunting 30% finals and group presentations into 4 manageable micro-checkpoints. Set personalized target completion dates for each milestone.</p>
+                        </div>
+                        <img src="./assets/anti_procrastination_img.png" alt="Anti-Procrastination" class="hidden md:inline-block">
+                    </div>
+    
+                    <div class="bg-white flex p-4 gap-4 rounded-lg shadow-sm md:flex-col">
+                        <div class="flex w-[32px] h-[32px] rounded-full bg-[#0E4471] justify-center items-center"><span class="text-[16px] font-bold text-center text-white">03</span></div>
+                        <div>
+                            <p class="text-[16px] text-[#1a1c1f] font-semibold">Ace the Semester</p>
+                            <p class="inline-block text-[12px] text-[#42474f] md:hidden">Watch checklist bars fill steadily. Relax knowing deadlines are in control.</p>
+                            <p class="hidden text-[12px] text-[#42474f] md:inline block">Watch your progress bars fill up steadily. Enjoy calm evenings with friends knowing everything is tracked, accounted for, and under total control.</p>
+                        </div>
+                        <img src="./assets/finals_img.png" alt="Stress-Free Finals" class="hidden md:inline-block">
+                    </div>
+                </div>
+                
+            </div>
+
+        </section>
+
+    </main>
 </body>
 </html>
