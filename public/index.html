@@ -10,7 +10,7 @@
 
     <header class="flex flex-col justify-center border-b border-gray-100 md:px-10 shadow-sm"> <!--HEADER ELEMENTS-->
 
-        <div class="flex justify-between items-center px-4 py-2 md:px-8">
+        <div class="flex justify-between items-center px-4 py-2 h-16 md:px-8">
 
             <div class="flex justify-center items-center gap-2 md:gap-3">
                 <svg class="w-11 h-11" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,25 +35,33 @@
                 <span class="font-semibold text-4 py-2">EduTrack</span>
             </div>
     
-            <div class="hidden md:flex md:gap-1"> <!--I want this to be in navbar for mobile and then spread out for bigger screens-->
+            <div class="hidden md:flex md:gap-1"> <!--Handles display for expanding above medium sized screens(Desktop basically)-->
                 <a href="#" class="px-4 py-2 text-[14px] text-center">Features</a>
                 <a href="#" class="px-4 py-2 text-[14px] text-center">How it Works</a>
                 <a href="#" class="px-4 py-2 text-[14px] text-center">Shared Courses</a>
                 <a href="#" class="px-4 py-2 text-[14px] text-center">Testimonies</a>
                 <a href="#" class="px-4 py-2 text-[14px] text-center">Pricing/Free</a>
             </div>
-    
+            
             <div class="flex gap-3">
                 <a href="./login.html" class="hidden md:inline-block py-2 px-4 text-center">Log In</a>
                 <a href="#" class="hidden md:inline-block bg-[#2E5C8A] text-white text-center py-2 px-4 rounded-lg">Get Started Free</a>
                 <a href="#" class="inline-block md:hidden py-3 px-[14px] bg-[#0E4471] text-white text-[14px] text-center font-semibold rounded-lg">Get started</a>
                 
-                <button>
-    
+                <button id="mobileDrawer" class="inline-block md:hidden" onclick="showLinks()">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg>
                 </button>
             </div>
-
-
+            
+            
+        </div>
+        
+        <div id="mobileMenu" class="hidden flex-col top-16 absolute right-0 bg-[#F9F9FD] shadow-sm rounded-md p-5 md:hidden md:gap-1"> <!--Javascript targets this one for display in drawer(mobile view)-->
+            <a href="#" class="px-4 py-2 text-[14px] text-center">Features</a>
+            <a href="#" class="px-4 py-2 text-[14px] text-center">How it Works</a>
+            <a href="#" class="px-4 py-2 text-[14px] text-center">Shared Courses</a>
+            <a href="#" class="px-4 py-2 text-[14px] text-center">Testimonies</a>
+            <a href="#" class="px-4 py-2 text-[14px] text-center">Pricing/Free</a>
         </div>
 
     </header>
@@ -424,5 +432,7 @@
 
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
